@@ -1,0 +1,27 @@
+#IDE plugins
+./TriangleTests/.idea/
+../TriangleTestsidea_modules/
+*./TriangleTests.iml
+*./TriangleTests.ipr
+*./TriangleTests.iws
+
+#Maven
+./TriangleTests/target/
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
