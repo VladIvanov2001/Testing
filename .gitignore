@@ -4,9 +4,14 @@
 *./TriangleTests.iml
 *./TriangleTests.ipr
 *./TriangleTests.iws
+./JavaCleanCode/.idea/
+*./JavaCleanCode.iml
+*./JavaCleanCode.ipr
+*./JavaCleanCode.iws
 
 #Maven
 ./TriangleTests/target/
+./JavaCleanCode/target/
 
 # Compiled class file
 *.class
