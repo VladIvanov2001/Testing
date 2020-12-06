@@ -26,7 +26,7 @@ public class GoToRestaurantTest {
     @BeforeTest (alwaysRun = true)
     public void browserSetup() {
         String path = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", path + "\\src\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",".\\src\\test\\resources\\chromedriver.exe");
 
         driver = new ChromeDriver();
         wait = new FluentWait<>(driver)
@@ -54,7 +54,6 @@ public class GoToRestaurantTest {
         clickOnLink(linkToVasilkyRestaurantPage);
 
         WebElement keywordsMetaTag = getElement(By.xpath("//head/meta[@name='keywords']"));
-
         Assert.assertTrue(keywordsMetaTag.getAttribute("content").contains("Васильки"));
     }
 
