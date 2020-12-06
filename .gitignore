@@ -8,10 +8,15 @@
 *./JavaCleanCode.iml
 *./JavaCleanCode.ipr
 *./JavaCleanCode.iws
+./WebDriver/.idea/
+*./WebDriver.iml
+*./WebDriver.ipr
+*./WebDriver.iws
 
 #Maven
 ./TriangleTests/target/
 ./JavaCleanCode/target/
+./WebDriver/target/
 
 # Compiled class file
 *.class
