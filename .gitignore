@@ -12,11 +12,21 @@
 *./WebDriver.iml
 *./WebDriver.ipr
 *./WebDriver.iws
+./PO/.idea/
+*./PO.iml
+*./PO.ipr
+*./PO.iws
+./framework/.idea/
+*./framework.iml
+*./framework.ipr
+*./framework.iws
 
 #Maven
 ./TriangleTests/target/
 ./JavaCleanCode/target/
 ./WebDriver/target/
+./PO/target/
+./framework/target/
 
 # Compiled class file
 *.class
