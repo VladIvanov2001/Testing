@@ -6,8 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import java.util.Calendar;
 
 public class LandingPage extends AbstractPage{
-    private static final String HOMEPAGE_URL = "https://www.menu.by/";
-
     @FindBy(xpath = "//input[@id='new_header_address_search']")
     private WebElement addressInput;
 
@@ -20,12 +18,12 @@ public class LandingPage extends AbstractPage{
     @FindBy(xpath = "//head/meta[@name='keywords']")
     private WebElement keywordsMetaTag;
 
-    public LandingPage(WebDriver driver) {
-        super(driver);
+    public LandingPage(WebDriver driver, String pageURL) {
+        super(driver, pageURL);
     }
 
     public LandingPage openPage() {
-        driver.get(HOMEPAGE_URL);
+        driver.get(pageURL);
 
         return this;
     }

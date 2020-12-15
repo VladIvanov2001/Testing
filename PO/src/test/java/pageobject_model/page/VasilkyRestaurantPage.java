@@ -9,20 +9,18 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class VasilkyRestaurantPage extends AbstractPage{
-    public static final String HOMEPAGE_URL = "https://www.menu.by/minsk/takeaway/restaurant/vasilki-nezavisimosti.html";
-
     @FindBy(id = "a-lnk-appetizers_127000")
     private WebElement appetizersLink;
 
     @FindBy(xpath = "//div[@class='fl prod-content']/a[contains(@keywords, 'Закуски')]")
     private List<WebElement> appetizersList;
 
-    public VasilkyRestaurantPage(WebDriver driver) {
-        super(driver);
+    public VasilkyRestaurantPage(WebDriver driver, String urlPage) {
+        super(driver, urlPage);
     }
 
     public VasilkyRestaurantPage openPage() {
-        driver.get(HOMEPAGE_URL);
+        driver.get(pageURL);
 
         return this;
     }

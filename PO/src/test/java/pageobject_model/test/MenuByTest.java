@@ -25,8 +25,8 @@ public class MenuByTest {
     }
 
     @Test
-    public void openVasilkyRestaurantPageTest() {
-        WebElement keywordsMetaTag = new LandingPage(driver)
+    public void openRestaurantPageTest() {
+        WebElement keywordsMetaTag = new LandingPage(driver, "https://www.menu.by/")
                 .openPage()
                 .enterAddressInAddressInput()
                 .clickOnAllRestaurantsLinkIfVasilkyIsWorking()
@@ -37,8 +37,8 @@ public class MenuByTest {
     }
 
     @Test
-    public void chooseAppetizersFromAllVasilkyMenusTest() {
-        List<WebElement> actualAppetizers = new VasilkyRestaurantPage(driver)
+    public void chooseAppetizersFromAllRestaurantMenusTest() {
+        List<WebElement> actualAppetizers = new VasilkyRestaurantPage(driver, "https://www.menu.by/minsk/takeaway/restaurant/vasilki-nezavisimosti.html")
                 .openPage()
                 .clickOnAppetizersLink()
                 .getFirstFourAppetizers();
